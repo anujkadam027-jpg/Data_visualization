@@ -1,0 +1,131 @@
+# Practical 8: Performing Advanced Analytics Using Trends, Clustering, and Forecasting
+
+Source: Data_Visualization_Sahil.pdf, Module 2
+
+## (a) Add and Interpret Trend Lines (Linear, Exponential)
+
+Objective: To add and interpret linear and exponential trend lines in Tableau.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Year to Columns.
+3. Drag Population to Rows.
+4. Open the Analytics pane.
+5. Drag Trend Line onto the view.
+6. Select Linear and observe the trend line.
+7. Repeat the same and select Exponential.
+8. Compare both trend lines.
+
+Result: Linear and exponential trend lines were added and interpreted to understand the relationship between Sales and Profit.
+
+## (b) Customize and Analyze Trend Models
+
+Objective: To customize and analyze a trend model in Tableau using the Trend Line options and model details.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Year to Columns.
+3. Drag Population to Rows.
+4. Open the Analytics pane.
+5. Drag Trend Line to the view.
+6. Select Linear trend line.
+7. Right-click the trend line and select Describe Trend Model.
+8. Observe the R-Squared, p-value, standard error, and model formula.
+9. Compare the trend model values and interpret the trend.
+
+Result: The trend model was customized and analyzed using model details such as R-Squared, p-value, and model formula.
+
+## (c) Perform Clustering on Datasets
+
+Objective: To perform clustering in Tableau and group similar data points based on selected measures.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Size (Sq Ft) to Columns.
+3. Drag Price to Rows.
+4. Open the Analytics pane.
+5. Drag Cluster onto the view.
+6. Set the required number of clusters.
+7. Click Apply.
+8. Observe the different clusters created in the scatter plot.
+9. Analyze the clusters based on Size (Sq Ft) and Price.
+
+Result: The dataset was divided into different clusters based on Size (Sq Ft) and Price, and the clusters were analyzed using the scatter plot.
+
+## (d) Analyze Distributions Using Built-in Tools
+
+Objective: To analyze the distribution of property prices using Tableau's built-in visualization tools.
+
+Steps
+
+1. Open Real Estate.xlsx in Tableau and create a new worksheet.
+2. Select the Price field and create bins.
+3. Drag Price (bin) to the Columns shelf.
+4. Drag Price to the Rows shelf.
+5. Select Histogram from Show Me.
+6. Observe the distribution of property prices.
+7. Adjust the bin size if required and analyze the results.
+
+Result: The distribution of property prices is analyzed using a histogram in Tableau.
+
+## (e) Apply Forecasting Techniques
+
+Objective: To forecast future values using Tableau's built-in forecasting feature.
+
+Dataset: Southwest 2016.csv
+
+Steps
+
+1. Open Southwest 2016.csv in Tableau and create a new worksheet.
+2. Drag the available date field to the Columns shelf.
+3. Drag the required numerical measure to the Rows shelf.
+4. Change the visualization to a Line Chart.
+5. Open the Analytics pane.
+6. Drag Forecast onto the view and select Show Forecast.
+7. Review the forecasted values and confidence intervals.
+8. Adjust the forecast options if required.
+
+Result: The future trend of the selected measure is forecasted using Tableau's built-in forecasting technique.
+
+## (f) Compare Different Statistical Models
+
+Objective: To compare different statistical models and identify their performance on the selected data.
+
+Dataset: Southwest 2016.csv
+
+Steps
+
+1. Open Southwest 2016.csv in Tableau and create a new worksheet.
+2. Place the date field on the Columns shelf.
+3. Place the required numerical measure on the Rows shelf.
+4. Open the Analytics pane.
+5. Add a Trend Line to the visualization.
+6. Select an appropriate model such as Linear.
+7. Repeat the analysis using other available trend models.
+8. Compare the model results using the displayed trend lines and statistical information.
+9. Note the differences in model fit and predictions.
+
+Result: Different statistical models are compared based on their trend and fit to the selected data.
+
+## (g) Export and Interpret Statistical Results
+
+Objective: To export statistical results from Tableau and interpret the obtained analysis.
+
+Dataset: Southwest 2016.csv
+
+Steps
+
+1. Open the required statistical visualization in Tableau.
+2. Review the calculated values and statistical information displayed in the view.
+3. Select Worksheet → Export from the menu.
+4. Choose the required export format, such as CSV or Crosstab.
+5. Save the exported file.
+6. Open the exported file and review the results.
+7. Interpret the results based on the calculated statistics and visualization.
+
+Result: The statistical results are exported successfully and interpreted to identify meaningful patterns in the data.
+
+Source: Data_Visualization_Sahil.pdf, Practical 8, Module 2.&#x20;

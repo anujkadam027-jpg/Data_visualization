@@ -1,0 +1,158 @@
+# Practical 2: Working with Data Sources and Data Preparation in Tableau
+
+Source: Data_Visualization_Sahil.pdf, pages 14–27
+
+## (a) Connect to Different Data Sources (Excel, CSV, Database)
+
+Objective: Connect Tableau to Excel, CSV, and database sources.
+
+A. Connect to Excel
+
+1. Open Tableau Desktop.
+2. Under Connect, select Microsoft Excel.
+3. Select the required Excel file.
+4. Click Open.
+5. Check the tables and fields in the Data Source tab.
+6. Open a new worksheet to use the data.
+
+B. Connect to CSV
+
+1. Go to the Start Page.
+2. Select Text File under Connect.
+3. Select the required CSV file.
+4. Click Open.
+5. Check the imported fields and data types.
+6. Open a new worksheet.
+
+C. Connect to a Database
+
+1. Go to the Start Page.
+2. Select the required Database connector.
+3. Enter the required server and login details.
+4. Select the required database and table.
+5. Click Connect.
+6. Check the available fields.
+7. Open a new worksheet and use the data.
+
+## (b) Create and Use Data Extracts vs Live Connections
+
+Objective: Understand the difference between a Live connection and an Extract in Tableau.
+
+A. Live Connection
+
+1. Open the Superstore CSV/Excel dataset in Tableau.
+2. Connect to the required file.
+3. Keep the connection as Live.
+4. Open a new worksheet.
+5. Drag Category to Rows.
+6. Drag Sales to Columns.
+7. Check the visualization using the live data.
+
+B. Create an Extract
+
+1. Go to the Data Source tab.
+2. Select Extract instead of Live.
+3. Click Extract.
+4. Save the extract when prompted.
+5. Open a new worksheet.
+6. Drag Category to Rows.
+7. Drag Sales to Columns.
+8. Check the visualization using the extract.
+
+C. Compare Both
+
+1. Check the same visualization using Live and Extract connections.
+2. Observe how the data is accessed in both cases.
+3. Note the difference in performance and data connection.
+
+## (c) Manage Metadata (Rename, Hide, Change Data Types)
+
+Objective: Manage fields by renaming, hiding, and changing their data types.
+
+1. Open the Superstore dataset in Tableau.
+2. Go to the Data Source tab.
+3. Find the required field in the data table.
+4. Right-click the field and select Rename.
+5. Enter a suitable name and press Enter.
+6. Right-click the field again and select Hide.
+7. To show the hidden field, use the Data Pane and select Show Hidden Fields.
+8. Select a field whose data type needs to be changed.
+9. Click the data type icon next to the field name.
+10. Select the required data type, such as String, Number, or Date.
+11. Check that the field is now displayed with the correct data type.
+
+Result: Missing and inconsistent data are identified and handled to prepare the dataset for accurate analysis.
+
+## (d) Perform Joins (Inner, Left, Right) on Multiple Tables
+
+Objective: To perform Inner, Left, and Right Joins on the Real Estate dataset in Tableau.
+
+Steps
+
+1. Open Tableau Desktop and connect to Real Estate.xlsx.
+2. Go to the Data Source tab.
+3. Add the Listings table to the workspace.
+4. Drag the second table, Sheet1, next to it.
+5. Select the common field to establish the join.
+6. Apply an Inner Join and observe the resulting records.
+7. Change the join type to Left Join and examine the result.
+8. Change it to a Right Join and compare the records.
+9. Open Sheet 1 and create a simple chart using the joined data.
+
+Result: The differences between Inner, Left, and Right Joins are observed using the Real Estate data.
+
+## (e) Apply Data Blending Between Two Sources
+
+Objective: To combine data from two separate sources using a common field in Tableau.
+
+Datasets Used:
+
+- Real Estate.xlsx
+- World Population.xlsx
+
+Steps
+
+1. Connect Real Estate.xlsx to Tableau and open a new worksheet.
+2. From the Data pane, drag Country Name to the Rows shelf.
+3. Add World Population.xlsx as a second data source using the data connection option.
+4. Select the World Population data source from the Data pane.
+5. Verify that Country Name is available as the common linking field between the two sources.
+6. Add the Population measure from the World Population source to the Text section of the Marks card.
+7. Check the linking indicator beside Country Name to confirm that Tableau is relating the two data sources.
+8. Observe the population values displayed against the corresponding country names.
+9. Rename the worksheet as Data Blending and save the workbook.
+
+## (f) Implement Different Types of Filters (Dimension, Measure, Date)
+
+Objective: To apply dimension, measure, and date filters to a visualization in Tableau.
+
+Steps
+
+1. Open Real Estate.xlsx in Tableau and create a new worksheet.
+2. Drag Type of Sale to the Rows shelf.
+3. Drag Price to the Columns shelf.
+4. Add Type of Sale to the Filters shelf to apply a dimension filter.
+5. Add Price to the Filters shelf and set the required range for the measure filter.
+6. Add an available date field to the Filters shelf and select the required date range.
+7. Change the filter values and observe the changes in the visualization.
+
+Result: Dimension, measure, and date filters are applied to the Real Estate visualization.
+
+## (g) Optimize Performance Using Extracts and Filtering
+
+Objective: To improve Tableau performance by using extracts and filters.
+
+Steps
+
+1. Open Real Estate.xlsx in Tableau.
+2. Go to the Data Source tab and change the connection from Live to Extract.
+3. Create the extract by selecting Extract.
+4. Open a new worksheet and add a dimension such as Type of Sale to the view.
+5. Apply a filter on Type of Sale.
+6. Add a measure filter using Price if required.
+7. Observe the worksheet performance after applying the filters.
+8. Save the Tableau workbook.
+
+Result: The dataset is converted to an extract and filters are applied to improve data analysis performance.
+
+Extracted from Practical 2, pages 14–27 of your uploaded PDF.&#x20;

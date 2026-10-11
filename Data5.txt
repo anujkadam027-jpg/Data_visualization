@@ -1,0 +1,133 @@
+# Practical 5: Analyzing Data Using Table Calculations in Tableau
+
+Source: Data_Visualization_Sahil.pdf
+
+## (a) Apply Quick Table Calculations (Running Total, Percent of Total)
+
+### A. Running Total
+
+Objective: Find the total sales added month by month.
+
+1. Open a new worksheet.
+2. Drag Order Date to Columns.
+3. Select Month (Continuous).
+4. Drag Sales to Rows.
+5. Right-click SUM(Sales).
+6. Select Quick Table Calculation → Running Total.
+7. Check the sales total month by month.
+8. Rename the worksheet Running Total of Sales.
+
+### B. Percent of Total
+
+Objective: Show each category's share of total sales.
+
+1. Open a new worksheet.
+2. Drag Category to Rows.
+3. Drag Sales to Columns.
+4. Right-click SUM(Sales).
+5. Select Quick Table Calculation → Percent of Total.
+6. Format the values as Percentage.
+7. Sort the categories from highest to lowest.
+
+## (b) Create Moving Averages and Cumulative Metrics
+
+### A. Moving Average
+
+Objective: Smooth sales changes by taking the average of nearby months.
+
+1. Open a new worksheet.
+2. Drag Month(Order Date) to Columns.
+3. Drag Sales to Rows.
+4. Right-click SUM(Sales).
+5. Select Quick Table Calculation → Moving Average.
+6. Check the smoothed sales trend.
+7. Rename the worksheet Moving Average.
+
+### B. Cumulative Metrics
+
+1. Duplicate the Moving Average worksheet.
+2. Right-click SUM(Sales).
+3. Select Quick Table Calculation → Running Total.
+4. Change the chart to a Line Chart.
+5. Add labels if needed.
+
+## (c) Perform Year-over-Year Growth Analysis
+
+Objective: Compare sales growth from year to year.
+
+1. Open a new worksheet.
+2. Drag YEAR(Order Date) to Columns.
+3. Drag Sales to Rows and Labels.
+4. Right-click SUM(Sales).
+5. Select Quick Table Calculation → Percent Difference.
+6. Right-click the Sales pill.
+7. Select Edit Table Calculation.
+8. Under Compute Using, select Table Across.
+9. Format the values as Percentage.
+10. Rename the worksheet.
+
+## (d) Use Ranking Functions (Top N, Bottom N)
+
+### A. Top N Analysis
+
+Objective: Find the products with the highest sales.
+
+1. Open a new worksheet.
+2. Drag Item to Rows.
+3. Drag Sales to Columns.
+4. Open the Top tab.
+5. Select By Field.
+6. Select Top 10 by SUM(Sales).
+7. Click OK.
+8. Sort the chart from highest to lowest.
+
+### B. Bottom N Analysis
+
+1. Duplicate the previous worksheet.
+2. Edit the filter.
+3. Select Bottom.
+4. Choose Bottom 10 by SUM(Sales).
+
+## (e) Implement Window Functions
+
+### A. WINDOW_SUM
+
+Objective: Calculate the total sales across a selected window.
+
+1. Create a calculated field named Window Sales.
+2. Enter the formula:
+
+`WINDOW_SUM(SUM([Sales]))`
+
+3. Click OK.
+4. Drag Region to Rows.
+5. Drag Window Sales to Columns.
+6. Right-click the Window Sales field.
+7. Select Edit Table Calculation.
+8. Under Compute Using, select Table (Down).
+
+### B. WINDOW_AVG
+
+1. Create a calculated field named Average Window Sales.
+2. Enter the formula:
+
+`WINDOW_AVG(SUM([Sales]))`
+
+3. Click OK.
+4. Replace Window Sales with Average Window Sales.
+5. Check the calculated average values.
+
+## (f) Customize Addressing and Partitioning
+
+Objective: Control how table calculations are performed.
+
+1. Drag Year(Order Date) to Columns.
+2. Drag Quarter(Order Date) and Month(Order Date) to Rows.
+3. Drag SUM(Sales) to Label.
+4. Select Table Calculation → Calculation Type → Running Total.
+5. Compare the results.
+6. Try different options:
+   - Table Across
+   - Table Down
+
+Extracted from Practical 5 of your PDF.&#x20;

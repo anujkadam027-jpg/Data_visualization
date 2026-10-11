@@ -1,0 +1,144 @@
+# Practical 4: Performing Data Analysis Using Calculations in Tableau
+
+Source: Data_Visualization_Sahil.pdf, pages 39–56
+
+## (a) Create Basic Calculated Fields Using Formulas
+
+Objective: Create new fields using formulas.
+
+1. Open a new worksheet.
+2. In the Data pane, right-click and select Create → Calculated Field.
+3. Name it Total Revenue.
+4. Enter `[Sales] - [Discount]` and click OK.
+5. Create another calculated field named Profit Margin.
+6. Enter `([Profit] / [Sales]) * 100` and click OK.
+7. Drag Region to Columns.
+8. Drag Profit Margin to Rows.
+9. Check the calculated values.
+
+## (b) Perform Row-Level Calculations
+
+Objective: Calculate values for each row in the dataset.
+
+1. Create a new calculated field named Net Sales.
+2. Enter the formula: `[Sales] - ([Sales] * [Discount])`
+3. Click OK.
+4. Create another calculated field named Profit Status.
+5. Enter the formula: `IF [Profit] > 0 THEN "Profit" ELSE "Loss" END`
+6. Click OK.
+7. Drag Profit Status to Color.
+8. Drag Net Sales to Rows.
+9. Drag Category to Columns.
+10. Check the calculated values.
+
+## (c) Perform Aggregate-Level Calculations
+
+Objective: Analyze summarized data using aggregate functions.
+
+1. Create a calculated field named Average Sales. Enter `AVG([Sales])`.
+2. Click OK.
+3. Create another field named Total Profit. Enter `SUM([Profit])`.
+4. Create another field named Profit Ratio. Enter `SUM([Profit])/SUM([Sales])`.
+5. Drag Region to Columns.
+6. Drag Profit Ratio to Rows.
+7. Format the result as Percentage.
+
+## (d) Implement FIXED Level of Detail (LOD) Calculations
+
+Objective: Calculate values independent of the current visualization.
+
+1. Create a calculated field named Sales by Region.
+2. Enter the formula: `{ FIXED [Region] : SUM([Sales]) }`
+3. Click OK.
+4. Drag Category to Rows.
+5. Drag Sales by Region to Columns.
+6. Drag Region to Color.
+7. Compare the result with regular SUM(Sales).
+
+## (e) Use INCLUDE and EXCLUDE LOD Expressions
+
+A. INCLUDE LOD
+
+Objective: Include additional dimensions in aggregation.
+
+1. Create a calculated field named Average Sales by Customer.
+2. Enter the formula: `{ INCLUDE [Customer Name] : AVG([Sales]) }`
+3. Click OK.
+4. Drag Region to Rows.
+5. Drag Average Sales by Customer to Columns.
+6. Check the customer-level averages.
+
+B. EXCLUDE LOD
+
+Objective: Remove a dimension from aggregation.
+
+1. Create a calculated field named Sales without Category.
+2. Enter the formula: `{ EXCLUDE [Category] : SUM([Sales]) }`
+3. Click OK.
+4. Drag Category to Rows.
+5. Drag Sales without Category to Columns.
+6. Compare the result with normal Sales.
+
+## (f) Create and Use Parameters for Dynamic Analysis
+
+Objective: Allow users to change calculations interactively.
+
+Create Parameter
+
+1. Right-click in the Data Pane.
+2. Select Create → Parameter.
+3. Name it Profit Threshold.
+4. Set Data Type to Float.
+5. Set Allowable Values to Range.
+6. Set Minimum to 0.
+7. Set Maximum to 1000.
+8. Set Step Size to 50.
+9. Click OK.
+10. Right-click the Profit Threshold parameter.
+11. Select Show Parameter.
+
+Create Parameter-Based Calculation
+
+12. Create a calculated field named High Profit.
+13. Enter the formula: `IF [Profit] > [Profit Threshold] THEN "High Profit" ELSE "Low Profit" END`
+14. Click OK.
+15. Drag High Profit to Color.
+16. Drag Sales to Rows.
+17. Drag Category to Columns.
+18. Change the Profit Threshold value and observe the visualization update.
+
+## (g) Apply Calculations to Fix Data Issues and Enhance Insights
+
+A. Handle Null Values
+
+1. Create a calculated field named Sales without Null.
+2. Enter the formula: `IFNULL([Sales], 0)`
+3. Click OK.
+4. Check that null sales values are replaced with zero.
+
+B. Categorize Sales
+
+1. Create a calculated field named Sales Category.
+2. Enter the formula: `IF [Sales] >= 1000 THEN "High Sales" ELSEIF [Sales] >= 500 THEN "Medium Sales" ELSE "Low Sales" END`
+3. Click OK.
+4. Drag Sales Category to Color.
+5. Create a bar chart with Category and Sales.
+
+C. Calculate Profit Percentage
+
+1. Create a calculated field named ProfitMargin.
+2. Enter the formula: `([Profit] / [Sales]) * 100`
+3. Format the result as Percentage.
+4. Create a table showing Category and Profit Percentage.
+
+D. Calculate Year-over-Year Growth (Optional)
+
+1. Drag Order Date to Columns.
+2. Drag Sales to Rows.
+3. Right-click Sales.
+4. Select Quick Table Calculation.
+5. Choose Percent Difference.
+6. Set the calculation to Table (Across).
+7. Format the result as Percentage.
+
+Extracted from Practical 4, pages 39–56 of your PDF.&#x20;

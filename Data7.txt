@@ -1,0 +1,146 @@
+# Practical 7: Creating Interactive Dashboards and Data Stories
+
+Source: Data_Visualization_Sahil.pdf
+
+## (a) Design a Basic Dashboard Layout Using Sheets
+
+Objective: Create a dashboard using different worksheets.
+
+1. Click New Dashboard.
+2. Set the size to Automatic or Desktop Browser (1200 × 800).
+3. Drag a Horizontal Container onto the dashboard.
+4. Add these worksheets:
+   - Sales by Category
+   - Profit by Region
+   - Monthly Sales Trend
+   - Top 10 Products
+5. Arrange the charts properly:
+   - Summary charts at the top.
+   - Trend chart in the middle.
+   - Detailed charts at the bottom.
+6. Add the title Sales Performance Dashboard.
+7. Resize and align the charts properly.
+8. Save the dashboard.
+
+## (b) Add Filters and Interactive Controls
+
+Objective: Add filters so the dashboard can be used interactively.
+
+1. Open the Sales by Category worksheet.
+2. Drag Region to the Filters shelf.
+3. Right-click Region and select Show Filter.
+4. Do the same for Category and Order Date.
+5. Go back to the dashboard.
+6. Place the filters on the left or top.
+7. Open the filter drop-down menu.
+8. Select Apply to Worksheets → All Using This Data Source.
+9. Select different values in each filter.
+10. Check that the dashboard changes according to the selected filters.
+
+Result: Region and Category filters were applied successfully to analyze the selected data.
+
+## (c) Implement Highlight and Filter Actions
+
+### A. Highlight Action
+
+Objective: Highlight related data in different worksheets.
+
+1. Open the dashboard.
+2. Go to Dashboard → Actions.
+3. Click Add Action → Highlight.
+4. Select Sales by Category as the source sheet.
+5. Select all the target worksheets.
+6. Set Run Action On to Hover.
+7. Click OK.
+8. Hover over a category and check that the related data is highlighted.
+
+### B. Filter Action
+
+Objective: Use one chart to filter other charts.
+
+1. Go to Dashboard → Actions.
+2. Click Add Action → Filter.
+3. Select Sales by Category as the source sheet.
+4. Select Monthly Sales Trend and Top Products as target sheets.
+5. Set Run Action On to Select.
+6. Set Clearing the Selection to Show All Values.
+7. Click OK.
+8. Select a category in the source chart and observe the changes in the target charts.
+
+## (d) Use URL and Set Actions for Interactivity
+
+### A. URL Action
+
+Objective: Open a webpage based on the selected data.
+
+1. Go to Dashboard → Actions.
+2. Click Add Action → Go to URL.
+3. Select the worksheet to use.
+4. Enter the URL:
+
+`https://www.google.com/search?q=<Category>`
+
+5. Set Run Action On to Menu.
+6. Click OK.
+7. Select a category and open the URL to check the result.
+
+### B. Set Action
+
+Objective: Use a set to interact with the dashboard data.
+
+1. Right-click Category in the Data pane.
+2. Select Create → Set.
+3. Name the set Selected Category.
+4. Click OK.
+5. Go to Dashboard → Actions.
+6. Click Add Action → Change Set Values.
+7. Select the source worksheet.
+8. Select Selected Category as the target set.
+9. Set Run Action On to Select.
+10. Click OK.
+
+## (e) Create Dynamic Dashboards Using Parameters
+
+Objective: Allow users to control dashboard analysis using parameters.
+
+### Create Parameter
+
+1. Right-click in the Data Pane.
+2. Select Create → Parameter.
+3. Name it Sales Threshold.
+4. Set Data Type to Integer.
+5. Set Allowable Values to Range.
+6. Set:
+   - Minimum: 0
+   - Maximum: 80,000
+   - Step Size: 1,000
+7. Click OK.
+8. Right-click Sales Threshold.
+9. Select Show Parameter.
+
+### Create Parameter-Based Calculation
+
+10. Create a calculated field named Sales Status.
+11. Enter the formula:
+
+`IF SUM([Sales]) >= [Sales Threshold] THEN "Above Threshold" ELSE "Below Threshold" END`
+
+12. Click OK.
+13. Drag Sales Status to Color.
+14. Add the worksheet to the dashboard.
+15. Change the Sales Threshold value and check the dashboard updates.
+
+## (f) Design Dashboards for Multiple Devices
+
+Objective: Optimize dashboards for desktop, tablet, and mobile devices.
+
+Steps
+
+1. Open the dashboard.
+2. Click Device Preview.
+3. Select Desktop and review the layout.
+4. Click Add Layout.
+5. Choose Tablet.
+6. Rearrange dashboard objects for tablet view.
+
+Extracted from Practical 7 of your PDF.&#x20;

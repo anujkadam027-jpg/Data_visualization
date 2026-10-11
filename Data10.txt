@@ -1,0 +1,92 @@
+# Practical 10: Retail Sales & Profitability Dashboard (Amazon Dataset)
+
+Source: Data_Visualization_Sahil.pdf
+
+Objective: Analyze sales, profit, and discount impact across regions.
+
+## (a) Build Bar, Line, and Map Visualizations
+
+Dataset: Amazon-Dataset.xlsx
+
+### A. Bar Chart
+
+1. Open the Amazon-Dataset.xlsx file in Tableau.
+2. Open a new worksheet.
+3. Drag Category to Rows.
+4. Drag Sales to Columns.
+5. Observe the bar chart.
+
+### B. Line Chart
+
+6. Open a new worksheet.
+7. Drag Order Date to Columns.
+8. Drag Sales to Rows.
+9. Select Month or Year for Order Date.
+10. Observe the sales trend.
+
+### C. Map
+
+11. Open a new worksheet.
+12. Double-click State.
+13. Tableau creates a map.
+14. Drag Sales to Color.
+15. Observe sales across different regions.
+
+Result: Bar, line, and map visualizations were created to analyze sales, trends, and regional performance.
+
+## (b) Use Calculated Fields (Profit Ratio)
+
+Objective: Create a Profit Ratio calculated field and use it to analyze profitability.
+
+Steps
+
+1. Open a new worksheet.
+2. In the Data Pane, right-click and select Create → Calculated Field.
+3. Enter the name Profit Ratio.
+4. Enter the formula:
+
+   \\[ \frac{\text{SUM(Profit)}}{\text{SUM(Sales)}} \\]
+
+   Tableau formula:
+   ```
+   SUM([Profit]) / SUM([Sales])
+   ```
+5. Click OK.
+6. Drag Category to Rows.
+7. Drag Profit Ratio to Columns.
+8. Format Profit Ratio as a percentage.
+
+Result: The Profit Ratio calculated field was created and used to compare profitability across categories.
+
+## (c) Apply Filters (Region, Category)
+
+Objective: Apply Region and Category filters to analyze the required data.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Region to the Filters shelf.
+3. Select the required regions.
+4. Right-click Region and select Show Filter.
+5. Drag Category to the Filters shelf.
+6. Observe the visualization after applying both filters.
+
+Result: Region and Category filters were applied successfully to analyze the selected data.
+
+## (d) Create Interactive Dashboard
+
+Objective: Create an interactive dashboard to analyze sales, profit, and regional performance.
+
+Steps
+
+1. Create worksheets for Bar Chart, Line Chart, and Map.
+2. Click New Dashboard.
+3. Drag the three worksheets into the dashboard.
+4. Add Region and Category filters.
+5. Select a chart and choose Use as Filter.
+6. Click different regions or categories to check the interaction.
+7. Add a suitable dashboard title.
+
+Result: An interactive dashboard was created to analyze sales, profit, and regional performance using filters and chart interactions.
+
+Source: Data_Visualization_Sahil.pdf, Practical 10.&#x20;

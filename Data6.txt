@@ -1,0 +1,104 @@
+# Practical No. 6: Designing Effective and Visually Appealing Dashboards
+
+Source: Data_Visualization_Sahil.pdf
+
+## (a) Apply Worksheet-Level and Workbook-Level Formatting
+
+Objective: Format the worksheet and workbook to make them look neat and consistent.
+
+### A. Worksheet-Level Formatting
+
+1. Open the Sales by Category worksheet.
+2. Go to Format from the menu bar.
+3. Select Font and set:
+   - Font: Arial or Calibri
+   - Size: 10–12 pt
+4. Go to Format → Alignment.
+5. Center-align the column headers.
+6. Adjust row and column dividers if needed.
+7. Change the worksheet title font size and color.
+8. Rename the worksheet with a suitable title.
+
+### B. Workbook-Level Formatting
+
+1. Open the dashboard.
+2. Go to Format → Workbook.
+3. Set the same font for the whole workbook.
+4. Set default shading and borders.
+5. Use consistent number formatting.
+6. Make sure all worksheets have the same theme and style.
+
+## (b) Customize Number, Date, and Null Value Formatting
+
+Objective: Show the data in a clear and easy-to-understand format.
+
+### A. Number Formatting
+
+1. Right-click the Sales field.
+2. Select Default Properties → Number Format.
+3. Choose Currency (Custom).
+4. Set decimal places to 2.
+
+### B. Date Formatting
+
+9. Right-click Order Date.
+10. Select Default Properties → Date Format.
+11. Choose a custom format such as:
+
+- `MMMM YYYY`
+- `DD-MMM-YYYY`
+
+### C. Null Value Formatting
+
+12. Select Format → Special Values.
+13. Replace Null with:
+
+- No Data
+- 0, if required.
+
+## (c) Design Effective Color Schemes and Layouts
+
+Objective: Make the dashboard clear and easy to read using suitable colors and layout.
+
+### A. Apply Color Scheme
+
+1. Open a worksheet.
+2. Drag a dimension to the Color card.
+3. Click Color → Edit Colors.
+4. Choose a suitable color palette, such as:
+   - Blue–Orange
+   - Green–Red
+   - Tableau 10
+5. Reverse the colors if needed.
+6. Keep the same colors for the same categories.
+7. Click Assign Palette → Apply → OK.
+
+### B. Dashboard Layout
+
+8. Open the dashboard.
+9. Set the dashboard size to Automatic or Desktop Browser.
+10. Use Horizontal and Vertical Containers to arrange the charts.
+11. Arrange the charts properly:
+    - KPIs at the top
+    - Trend charts in the middle
+    - Detailed charts at the bottom
+12. Leave enough white space between objects.
+13. Align all visualizations properly.
+
+## (f) Improve Readability and User Experience
+
+Objective: Make the dashboard easy to understand and use.
+
+1. Use clear worksheet titles.
+2. Remove unnecessary gridlines.
+3. Avoid too many labels.
+4. Use readable font sizes (10–14 pt).
+5. Do not overcrowd the dashboard.
+6. Align all charts properly.
+7. Keep filters on the left or top.
+8. Use legends only when needed.
+9. Highlight important KPIs.
+10. Add instructions if required.
+11. Test the dashboard using filters and actions.
+
+Extracted from Practical 6 of your PDF.&#x20;

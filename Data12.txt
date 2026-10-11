@@ -1,0 +1,66 @@
+# Practical 12: Sales Forecasting and Trend Analysis (Amazon Dataset)
+
+Source: Data_Visualization_Sahil.pdf
+
+Objective: Predict future sales using historical data.
+
+## (a) Build Time-Series Charts
+
+Objective: To create time-series charts to analyze historical sales trends.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Order Date to Columns.
+3. Select Month or Year for the date level.
+4. Drag Sales to Rows.
+5. Tableau creates a line chart.
+6. Add Region or Category to Color if required.
+7. Observe the sales trend over time.
+
+Result: A time-series chart was created to analyze historical sales trends.&#x20;
+
+## (b) Apply Forecasting
+
+Objective: To forecast future sales using historical sales data.
+
+Steps
+
+1. Open the time-series sales worksheet.
+2. Open the Analytics pane.
+3. Drag Forecast into the view.
+4. Tableau adds the forecast to the sales trend.
+5. Observe the predicted sales values for future periods.
+6. Compare the forecast with the historical sales trend.
+
+Result: A sales forecast was created using historical sales data to predict future sales.&#x20;
+
+## (c) Compare Seasonal Trends
+
+Objective: To compare seasonal sales trends using historical data.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Order Date to Columns.
+3. Select Month for the date level.
+4. Drag Sales to Rows.
+5. Drag Year to Color.
+6. Compare the monthly sales patterns for different years.
+7. Observe the months with higher or lower sales.
+
+Result: Seasonal sales trends were compared across different years using monthly sales patterns.&#x20;
+
+## (d) Use Moving Averages
+
+Objective: To apply moving averages to smooth sales data and identify trends.
+
+Steps
+
+1. Open the time-series sales worksheet.
+2. Drag Order Date to Columns.
+3. Drag Sales to Rows.
+4. Right-click Sales.
+5. Select Quick Table Calculation → Moving Average.
+
+Result: Moving averages were applied to smooth sales data and identify trends.&#x20;

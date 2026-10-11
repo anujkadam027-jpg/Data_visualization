@@ -1,0 +1,74 @@
+# Practical 11: Customer Segmentation & Behavior Analysis (Amazon Dataset)
+
+Source: Data_Visualization_Sahil.pdf
+
+Objective: Identify customer segments based on purchasing patterns.
+
+## (a) Use Clustering
+
+Objective: To identify customer segments based on their purchasing patterns using clustering.
+
+Steps
+
+1. Open Amazon-Dataset.xlsx in Tableau.
+2. Open a new worksheet.
+3. Drag Sales to Columns.
+4. Drag Profit to Rows.
+5. Open the Analytics pane.
+6. Under Model, drag Cluster onto the scatter plot.
+7. In the Clusters dialog box, set the required number of clusters.
+8. Click Apply.
+9. Observe the different customer segments formed.
+
+Result: Customer segments were created using clustering based on Sales and Profit.&#x20;
+
+## (b) Analyze Frequency, Recency, and Monetary Value (RFM)
+
+Objective: To analyze customer purchasing behavior using frequency, recency, and monetary value.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Customer Name to Rows.
+3. Drag Order Date to the view and use Count to analyze purchase frequency.
+4. Use the latest Order Date to analyze customer recency.
+5. Drag Sales to the view to analyze monetary value.
+6. Compare customers based on frequency, recency, and sales.
+7. Format the values and add suitable labels.
+
+Result: Customer purchasing behavior was analyzed using Frequency, Recency, and Monetary Value (RFM).&#x20;
+
+## (c) Create Scatter Plots and Segmentation Dashboards
+
+Objective: To create scatter plots and an interactive dashboard for customer segmentation.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Sales to Columns.
+3. Drag Profit to Rows.
+4. Drag Customer Name to Detail.
+5. Open the Analytics pane and drag Cluster onto the view.
+6. Observe the customer segments in the scatter plot.
+7. Create a new dashboard.
+8. Add the Scatter Plot and other customer analysis worksheets.
+9. Add required filters and enable Use as Filter.
+10. Add a suitable dashboard title.
+
+Result: A scatter plot and interactive segmentation dashboard were created to analyze customer groups based on purchasing behavior.&#x20;
+
+## (d) Highlight High-Value Customers
+
+Objective: To identify and highlight high-value customers based on their sales.
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Customer Name to Rows.
+3. Drag Sales to Columns.
+4. Sort Sales from highest to lowest.
+5. Drag Sales to Color.
+6. Identify customers with the highest sales values.
+7. Add suitable labels to highlight these customers.
+
+Result: High-value customers were identified and highlighted based on their sales.&#x20;

@@ -1,0 +1,120 @@
+# Practical 9: Cleaning and Structuring Data for Analysis
+
+Source: Data_Visualization_Sahil.pdf
+
+## (A) Identify and Handle Missing or Inconsistent Data
+
+Objective: To identify missing or inconsistent values and clean the dataset for analysis.
+
+Dataset: Hospital Patients Dates.xlsx
+
+Steps
+
+1. Open Hospital Patients Dates.xlsx in Tableau.
+2. Review the fields in the Data Source tab.
+3. Check the columns for Null, blank, or inconsistent values.
+4. Identify fields containing missing or incorrect entries.
+5. Use filters or the Data Interpreter where appropriate to examine the affected records.
+6. Replace or exclude invalid values as required.
+7. Verify that date, numeric, and categorical fields have consistent data types and formats.
+8. Recheck the cleaned data before starting the analysis.
+
+Result: Missing and inconsistent data are identified and handled to prepare the dataset for accurate analysis.
+
+## (B) Convert Wide Data into Tall Format
+
+Objective: To transform wide-format data into a tall format suitable for analysis.
+
+Dataset: Country(Wide).xlsx
+
+Steps
+
+1. Open Country(Wide).xlsx in Tableau.
+2. Go to the Data Source tab and review the wide-format structure.
+3. Select the columns that need to be converted into rows.
+4. Right-click the selected columns and choose Pivot.
+5. Tableau creates Pivot Field Names and Pivot Field Values.
+6. Rename these fields appropriately if required.
+7. Verify that each observation is represented as a separate row.
+8. Use the transformed data for further analysis.
+
+Result: The wide-format dataset is converted into a tall format, making it easier to analyze in Tableau.
+
+## (C) Perform Union of Multiple Files
+
+Files Used: Originals.txt, Prequels.txt, Sequels.txt
+
+Steps
+
+1. Connect Originals.txt to Tableau.
+2. Open the Data Source page.
+3. Create a Union and add Prequels.txt and Sequels.txt.
+4. Tableau combines the records from all three files into a single table.
+5. Verify that the common fields Name, Occupation, and Bank Account Balance are properly aligned.
+6. Check the combined data for any missing or inconsistent values.
+7. Rename the union table if required.
+8. Use the combined dataset for further analysis and visualization.
+
+## (D) Execute Cross-Database Joins
+
+Dataset Used: Real Estate.xlsx
+
+Steps
+
+1. Connect Real Estate.xlsx to Tableau.
+2. Open the Data Source page and add the required tables.
+3. Drag the first table into the workspace and add the second table.
+4. Select Cross-Database Join to combine data from the two sources.
+5. Identify the common field between the tables and use it as the join key.
+6. Select the required join type, such as Inner Join or Left Join.
+7. Verify that the joined data is displayed correctly.
+8. Use the combined data for further analysis and visualization.
+
+## (E) Restructure Data for Better Visualization
+
+Dataset Used: Country(Wide).xlsx
+
+Steps
+
+1. Connect Country(Wide).xlsx to Tableau.
+2. Open the Data Source page and examine the wide-format data.
+3. Select the related columns that need to be converted into rows.
+4. Right-click the selected columns and choose Pivot.
+5. Tableau creates Pivot Field Names and Pivot Field Values.
+6. Rename the generated fields if required.
+7. Verify that the data is arranged in a suitable row-wise format.
+8. Use the restructured data to create effective visualizations.
+
+## (F) Handle Different Levels of Detail in Datasets
+
+Dataset Used: World Population.xlsx
+
+Steps
+
+1. Connect World Population.xlsx to Tableau and open a new worksheet.
+2. Identify Country Name as the available geographic dimension and Population as the measure.
+3. Drag Country Name to the Rows shelf to display the population data at the country level.
+4. Add Population to the Text shelf to display the corresponding population values.
+5. Drag Country Name to the Filters shelf and select the required countries for focused analysis.
+6. Add Country Name to the Detail shelf to incorporate geographic information into the view.
+7. Use the generated Latitude and Longitude fields to represent the countries geographically.
+8. Compare the population values for the selected countries and use the appropriate level of detail for the required visualization.
+
+Result: The population data was analyzed at the available geographic level and presented using suitable levels of detail for visualization.
+
+## (G) Apply Advanced Data Cleaning Techniques
+
+Dataset Used: Hospital Patients Dates.xlsx
+
+Steps
+
+1. Connect Hospital Patients Dates.xlsx to Tableau.
+2. Open the Data Source page and inspect the available fields.
+3. Identify missing, duplicate, inconsistent, or incorrectly formatted values.
+4. Correct the data types and formats of date, numeric, and categorical fields.
+5. Use filters or cleaning options to identify invalid records.
+6. Replace, remove, or exclude incorrect values where required.
+7. Verify that the cleaned fields contain consistent and valid data.
+8. Use the cleaned dataset for further analysis and visualization.
+
+Source: Data_Visualization_Sahil.pdf, Practical 9, pages 105–112.&#x20;

@@ -1,0 +1,122 @@
+# Practical 3: Creating Advanced Visualizations in Tableau
+
+Source: Data_Visualization_Sahil.pdf, pages 28–38
+
+## (a) Create Stacked and Grouped Bar Charts for Comparison
+
+A. Stacked Bar Chart
+
+Steps
+
+1. Open a new worksheet.
+2. Drag Department to the Columns shelf.
+3. Drag Sales to the Rows shelf.
+4. Drag Category to Color in the Marks card.
+5. Tableau will create a stacked bar chart.
+6. Sort the bars in descending order.
+7. Drag Sales to Label to show the values.
+8. Rename the worksheet as Stacked Bar Chart.
+
+B. Grouped Bar Chart
+
+1. Open a new worksheet.
+2. Drag Category to Columns.
+3. Drag Region next to Category on Columns.
+4. Drag Sales to Rows.
+5. Select Show Me → Side-by-Side Bars.
+6. Change the colors if required.
+7. Show Sales values using labels.
+
+## (b) Build Treemaps and Pie Charts for Part-to-Whole Analysis
+
+A. Treemap
+
+1. Open a new worksheet.
+2. Select Category and Sales.
+3. Click Show Me.
+4. Select Treemap.
+5. Drag Profit to Color.
+6. Drag Sales to Size.
+7. Add Category to Label to show category names.
+
+B. Pie Chart
+
+1. Open a new worksheet.
+2. Change the Marks type to Pie.
+3. Drag Region to Color.
+4. Drag Sales to Angle.
+5. Drag Region to Label.
+6. Drag Sales to Label.
+7. Right-click Sales and select Quick Table Calculation → Percent of Total.
+8. Format the percentage labels as required.
+
+## (c) Scatter Plot
+
+1. Open a new worksheet.
+2. Drag Sales to Columns.
+3. Drag Profit to Rows.
+4. Drag Category to Color.
+5. Rename the worksheet as Scatter Plot.
+
+## (d) Dual-Axis Chart
+
+1. Open a new worksheet.
+2. Drag Order Date to Columns.
+3. Drag Sales to Rows.
+4. Drag Profit next to Sales on Rows.
+5. Right-click the Profit axis.
+6. Select Dual Axis.
+7. Right-click the secondary axis and select Synchronize Axis.
+8. Change the Sales Marks type to Bar.
+
+## (e) Combination Chart
+
+1. Open a new worksheet.
+2. Drag Month(Order Date) to Columns.
+3. Drag Sales to Rows.
+4. Drag Profit next to Sales.
+5. Select Dual Axis.
+6. Set Sales as Bar.
+7. Set Profit as Line.
+8. Synchronize both axes.
+9. Add labels to show the values.
+
+## (f) Develop Histograms for Distribution Analysis
+
+1. Open a new worksheet.
+2. Right-click Sales and select Create → Bins.
+3. Keep the default bin size.
+4. Drag Sales (bin) to Columns.
+5. Drag Profit to Rows.
+6. Click Show Me → Histogram.
+
+## (g) Build Box-and-Whisker Plots
+
+1. Open a new worksheet.
+2. Drag Department to Columns.
+3. Drag Sales to Rows.
+4. Click Show Me → Box-and-Whisker Plot.
+5. Drag Category to Detail.
+6. Drag Region to Color.
+
+### A. Gantt Chart
+
+1. Open a new worksheet.
+2. Drag Order ID to Rows.
+3. Drag Order Date to Columns.
+4. Change the Marks type to Gantt Bar.
+5. Drag Shipping Cost or Sales to Size.
+6. Drag Category to Color.
+7. Format the chart if needed.
+
+### B. Advanced Date Visualization
+
+1. Open a new worksheet.
+2. Drag Order Date to Columns.
+3. Select Month (Continuous).
+4. Drag Sales to Rows.
+5. Select Line Chart.
+6. Drag Region to Color.
+7. Add Trend Line if needed.
+
+Extracted from Practical 3, pages 28–38 of your PDF.&#x20;
