@@ -1,0 +1,102 @@
+# Practical 1: Getting Started with Tableau and Building Basic Visualizations
+
+I extracted the steps for Practical 1 only from your PDF, covering pages 1–13. I've organized the text by section and kept the original terminology and formulas where applicable.
+
+## (a) Connect to a CSV Dataset and Explore the Tableau Interface
+
+1. Open Tableau Desktop.
+2. On the Start Page, select Text File under the Connect section.
+3. Select the required CSV file from your computer.
+4. Click Open to load the dataset.
+5. The dataset will appear in the Data Source tab.
+6. Check the imported fields and make sure their data types are correct.
+7. Click on Sheet 1 to open the worksheet.
+8. Explore the main parts of the Tableau interface:
+   - Data Pane
+   - Analytics Pane
+   - Show Me Panel
+   - Worksheet Area
+9. Check that all the required fields have been imported properly.
+
+## (b) Identify and Differentiate Measures and Dimensions
+
+1. Open the imported dataset in Tableau.
+2. Look at the Data Pane on the left side.
+3. Observe the two types of fields:
+   - Dimensions: Category, Region, Customer Name
+   - Measures: Sales, Profit, Quantity
+4. Drag Category to the Rows shelf.
+5. Drag Sales to the Columns shelf.
+6. Observe how Tableau shows the Sales values.
+7. Right-click on a field to check whether it is a Dimension or Measure.
+
+## (c) Convert Fields Between Discrete and Continuous and Observe Changes
+
+1. Open a worksheet.
+2. Drag Sales to the Columns shelf.
+3. Sales appears as a green field (Continuous).
+4. Click the arrow on Sales and select Convert to Discrete.
+5. Sales changes to a blue field (Discrete).
+6. Observe the change:
+   - Continuous → Axis
+   - Discrete → Headers
+7. Change Sales back to Continuous.
+8. Try the same with a date field.
+
+## (d) Create and Customize a Basic Bar Chart
+
+1. Open a new worksheet.
+2. Drag Category to the Rows shelf.
+3. Drag Sales to the Columns shelf.
+4. Tableau will create a bar chart automatically.
+5. Use the Marks Card to:
+   - Change the bar color.
+   - Show mark labels.
+   - Change the bar size.
+6. Sort the bars in ascending or descending order.
+7. Add a suitable chart title.
+8. Format the labels and font if needed.
+
+## (e) Build a Line Chart for Time-Series Analysis
+
+1. Open a new worksheet.
+2. Drag Order Date to the Columns shelf.
+3. Select the required date level, such as Month, Quarter, or Year.
+4. Drag Sales to the Rows shelf.
+5. Tableau will create a line chart.
+6. Customize the chart by changing the line color, adding labels, and formatting the date.
+7. Add filters such as Region or Category if required.
+8. Observe the chart to understand the sales trends over time.
+
+## (f) Create a Geographic Map Visualization
+
+1. Open a new worksheet.
+2. Check that the dataset has a geographic field such as Country, State, or City.
+3. Check the Geographic Role of the field.
+4. Double-click State or Country.
+5. Tableau will create a map automatically.
+6. Drag Sales to Color.
+7. Drag Profit to Size.
+8. Drag Region to Label.
+9. Use the map controls to zoom and move the map.
+10. Adjust the colors and labels if required.
+
+## (g) Combine Multiple Charts into a Simple Interactive Dashboard
+
+1. Create three worksheets:
+   - Sales by Category – Bar Chart
+   - Sales Trend by Month – Line Chart
+   - Sales by Region – Map
+2. Click on New Dashboard.
+3. Select the dashboard size.
+4. Drag the three worksheets into the dashboard.
+5. Arrange the charts properly.
+6. Select a chart and choose Use as Filter.
+7. Add Region and Category filters.
+8. Add a dashboard title and legends.
+9. Adjust the chart size, spacing, and colors.
+10. Select different categories or regions to check the dashboard interaction.
+
+Source: Uploaded PDF, Dv_134(1).pdf, pages 1–13.&#x20;
+
+These are the steps for Practical 1 only; Practical 3 and Practical 4 begin later in the PDF.
