@@ -1,0 +1,53 @@
+I found your Data Visualization (Tableau) practical PDF. I’ll organize the formulas by practical name so they’re easier to memorize. I’ll include only formulas shown in the practical material, not invent formulas for practicals that don't use them.
+
+## Practical 4: Performing Data Analysis Using Calculations in Tableau
+
+| No. | Calculated field          | Formula                                                                     |
+| --- | ------------------------- | --------------------------------------------------------------------------- |
+| 1   | Total Revenue             | `[Sales] - [Discount]`                                                      |
+| 2   | Profit Margin             | `([Profit] / [Sales]) * 100`                                                |
+| 3   | Average Sales             | `AVG([Sales])`                                                              |
+| 4   | Total Profit              | `SUM([Profit])`                                                             |
+| 5   | Sales by Region           | `{ FIXED [Region] : SUM([Sales]) }`                                         |
+| 6   | Average Sales by Customer | `{ INCLUDE [Customer Name] : AVG([Sales]) }`                                |
+| 7   | Sales Without Category    | `{ EXCLUDE [Category] : SUM([Sales]) }`                                     |
+| 8   | High Profit               | `IF [Profit] > [Profit Threshold] THEN "High Profit" ELSE "Low Profit" END` |
+| 9   | Sales Without Null        | `IFNULL([Sales], 0)`                                                        |
+
+## Practical 5: Analyzing Data Using Table Calculations in Tableau
+
+| Calculation      | How to remember it                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------- |
+| Running Total    | `SUM(Sales)` accumulated month by month using Quick Table Calculation → Running Total |
+| Percent of Total | Use Quick Table Calculation → Percent of Total                                        |
+
+These are selected from Tableau’s menu in the practical rather than entered as written formulas.&#x20;
+
+Data_Visualization_Sahil.pdf
+
+
+
+## Practical 10: Retail Sales & Profitability Dashboard (Amazon Dataset)
+
+| Calculated field | Formula                        |
+| ---------------- | ------------------------------ |
+| Profit Ratio     | `SUM([Profit]) / SUM([Sales])` |
+
+Data_Visualization_Sahil.pdf
+
+## Quick memorization list
+
+Focus on these formula names and patterns first:
+
+- Total Revenue → Sales − Discount
+- Profit Margin → Profit ÷ Sales × 100
+- Average Sales → `AVG([Sales])`
+- Total Profit → `SUM([Profit])`
+- Sales by Region → `FIXED [Region]`
+- Average Sales by Customer → `INCLUDE [Customer Name]`
+- Sales Without Category → `EXCLUDE [Category]`
+- High Profit → `IF … THEN … ELSE … END`
+- Sales Without Null → `IFNULL([Sales], 0)`
+- Profit Ratio → `SUM(Profit) / SUM(Sales)`
+
+Note: The PDF also contains practicals focused on charts, dashboards, formatting, cleaning, and clustering. Those don't necessarily contain written formulas. This list covers the formulas I could verify from the retrieved sections; I can’t guarantee it includes every formula on every page without a complete pass through the PDF.
